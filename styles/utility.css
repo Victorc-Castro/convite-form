@@ -8,3 +8,17 @@
   font: var(--heading-sm);
   color: var(--text-heading);
 }
+
+.input-wrapper {
+  display: grid;
+  gap: .75rem;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-1 {
+  flex: 1;
+}

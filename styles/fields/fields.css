@@ -1,0 +1,32 @@
+input, textarea, select {
+  background-color: var(--input-base);
+  appearance: none;
+  width: 100%;
+  border: 1px solid var(--input-placeholder);
+  border-radius: .5rem;
+  padding: .75rem 1rem;
+  font: var(--body-md);
+  color: var(--text-heading);
+}
+
+label {
+  font: var(--body-sm);
+  color: var(--text-body);
+
+  display: block;
+  margin-bottom: .25rem;
+}
+
+::placeholder {
+  color: var(--input-placeholder);
+}
+
+input[type="date"] {
+  text-transform: uppercase;
+  color: var(--input-placeholder);
+  position: relative;
+  
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+}
