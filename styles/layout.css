@@ -1,0 +1,32 @@
+div#content {
+  display: grid;
+  grid-template-columns: 30% 70%;
+
+  height: 100vh;
+  overflow: hidden;
+}
+
+aside {
+  background-image: url(../assets/img/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 25rem;
+
+  & img {
+    width: 2.865625rem;
+    height: 3rem;
+    margin: 1.875rem 1.875rem 1rem 1.875rem;
+  }
+
+  & h1 {
+    font: var(--logo);
+    color: var(--pink);
+    margin-left: 1.400rem;
+  }
+
+  & p#text-aside {
+    font: var(--body-md);
+    color: var(--text-body);
+    margin-left: 1.400rem;
+  }
+}
