@@ -1,0 +1,9 @@
+fieldset {
+  border: none;
+  display: flex;
+}
+
+.input-wrapper {
+  display: grid;
+  gap: 1.5rem;
+}

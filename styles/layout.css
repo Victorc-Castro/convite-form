@@ -1,6 +1,6 @@
 div#content {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 26% 74%;
 
   height: 100vh;
   overflow: hidden;
@@ -10,7 +10,11 @@ aside {
   background-image: url(../assets/img/Background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 25rem;
+
+  & aside.apresentation {
+    max-width: 21rem;
+    max-height: 9rem;
+  }
 
   & img {
     width: 2.865625rem;
@@ -29,4 +33,20 @@ aside {
     color: var(--text-body);
     margin-left: 1.400rem;
   }
+}
+
+main {
+  background-color: var(--shape-background);
+  padding: 5rem;
+
+  & .main-content {
+    max-width: 35rem;
+    margin: auto;
+  }
+}
+
+h2 {
+  font: var(--heading-md);
+  color: var(--text-heading);
+  margin-bottom: 2.5rem;
 }

@@ -27,7 +27,30 @@
     </aside>
 
     <main>
-      
+      <div class="main-content">
+        <h2>Crie seu convite</h2>
+
+        <form method="post" enctype="multipart/form-data">
+
+          <div class="legend-config">
+            <img src="./assets/icons/calendar-icon.svg" alt="Ícone de calendário">
+            <legend>Sobre o evento</legend>
+          </div>
+          
+          <fieldset class="event-info">
+              <div class="input-wrapper">
+                <label for="event-name">Título</label>
+                <input 
+                  type="text" 
+                  name="event-name" 
+                  id="event-name" 
+                  placeholder="Nome do evento"
+                >
+              </div>
+          </fieldset>
+
+        </form>
+      </div>
     </main>
   </div>
 </body>
