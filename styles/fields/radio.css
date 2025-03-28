@@ -1,0 +1,35 @@
+.radio-wrapper {
+  display: flex;
+  gap: 2.5rem;
+  border: 1px solid var(--input-placeholder);
+  border-radius: .5rem;
+  font: var(--body-md);
+  color: var(--text-heading);
+  background-color: var(--input-base);
+  padding: .75rem 1rem;
+}
+
+.radio-inner {
+  display: flex;
+  align-items: end;
+  position: relative;
+
+  & img {
+    margin-right: 1rem;
+  }
+
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+}
+
+.radio-inner {
+  &:hover, &:focus-within {
+    background-color: var(--shape-hover);
+    border-radius: .5rem;
+  }
+}
