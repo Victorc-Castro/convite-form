@@ -30,3 +30,9 @@ input[type="date"] {
     opacity: 0;
   }
 }
+
+fieldset {
+  border: none;
+  display: grid;
+  gap: 1rem;
+}
