@@ -1,22 +1,21 @@
 .radio-wrapper {
+  position: relative;
   display: flex;
+  justify-content: center;
   gap: 2.5rem;
-  border: 1px solid var(--input-placeholder);
+  padding: .75rem 1rem;
   border-radius: .5rem;
   font: var(--body-md);
   color: var(--text-heading);
   background-color: var(--input-base);
-  padding: .75rem 1rem;
+  border: 1px solid var(--input-placeholder);
 }
 
 .radio-inner {
-  display: flex;
-  align-items: end;
   position: relative;
-
-  & img {
-    margin-right: 1rem;
-  }
+  display: flex;
+  align-items: center;
+  gap: .75rem;
 
   & input,
   & input:focus,
@@ -25,11 +24,63 @@
     position: absolute;
     inset: 0;
   }
-}
 
-.radio-inner {
+  & .radio-image {
+    background-image: url(../../assets/icons/local-default.svg);
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: background-color 0.3s ease;
+  }
+
   &:hover, &:focus-within {
     background-color: var(--shape-hover);
     border-radius: .5rem;
+    transition: background-color 0.3s ease;
+
+    & .radio-image {
+      background-image: url(../../assets/icons/local-checked.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: background-color 0.3s ease;
+    }
+  }
+}
+
+.radio-inner-2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  & .radio-image {
+    background-image: url(../../assets/icons/camera-default.svg);
+    width: 2.5rem;
+    height: 2.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: background-color 0.3s ease;
+  }
+
+  &:hover, &:focus-within {
+    background-color: var(--shape-hover);
+    border-radius: .5rem;
+    transition: background-color 0.3s ease;
+    
+    & .radio-image {
+      background-image: url(../../assets/icons/camera-checked.svg);
+      transition: background-color 0.3s ease;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
 }
