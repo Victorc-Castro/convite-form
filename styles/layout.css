@@ -36,6 +36,8 @@ aside {
 }
 
 main {
+  overflow: auto;
+
   background-color: var(--shape-background);
   padding: 5rem;
 

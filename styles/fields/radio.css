@@ -46,6 +46,18 @@
       transition: background-color 0.3s ease;
     }
   }
+
+  &:has(:checked) {
+    background-color: var(--shape-hover);
+    border-radius: .5rem;
+
+    & .radio-image {
+      background-image: url(../../assets/icons/local-checked.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: background-color 0.3s ease;
+    }
+  }
 }
 
 .radio-inner-2 {
@@ -81,6 +93,18 @@
       transition: background-color 0.3s ease;
       background-repeat: no-repeat;
       background-size: contain;
+    }
+  }
+
+  &:has(:checked) {
+    background-color: var(--shape-hover);
+    border-radius: .5rem;
+
+    & .radio-image {
+      background-image: url(../../assets/icons/camera-checked.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: background-color 0.3s ease;
     }
   }
 }
