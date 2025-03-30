@@ -1,0 +1,33 @@
+label + .droparea {
+  margin-top: 1rem;
+}
+
+.droparea {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: .5rem;
+
+  & input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  & .file-img {
+    background-image: url(../../assets/icons/file-default-icon.svg);
+    width: 7.4375rem;
+    height: 2.5rem;
+  }
+  
+  &:hover, :focus-within {
+    .file-img {
+      transition: filter 0.3s ease-in-out;
+      filter: brightness(1.13);
+    }
+  }
+
+  & p {
+    font: var(--body-md);
+    color: var(--input-placeholder);
+  }
+}
