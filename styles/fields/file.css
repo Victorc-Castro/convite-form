@@ -1,5 +1,12 @@
 label + .droparea {
-  margin-top: 1rem;
+  margin-top: .25rem;
+}
+
+.files-wrapper {
+  display: grid;
+  grid-template-columns: 11rem 23rem;
+  gap: 1rem;
+  margin-top: 1.75rem;  
 }
 
 .droparea {
