@@ -7,6 +7,7 @@ label + .droparea {
   grid-template-columns: 11rem 23rem;
   gap: 1rem;
   margin-top: 1.75rem;  
+  position: relative;
 }
 
 .droparea {
@@ -18,12 +19,14 @@ label + .droparea {
   & input {
     position: absolute;
     opacity: 0;
+    cursor: pointer;
   }
 
   & .file-img {
     background-image: url(../../assets/icons/file-default-icon.svg);
     width: 7.4375rem;
     height: 2.5rem;
+    cursor: pointer;
   }
   
   &:hover, :focus-within {
@@ -37,4 +40,37 @@ label + .droparea {
     font: var(--body-md);
     color: var(--input-placeholder);
   }
+}
+
+
+ input[type="checkbox"] {
+  appearance: none;
+  width: 64px;
+  height: 32px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: .3s;
+  position: absolute;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: var(--input-stroke);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 6%;
+  transition: .3s;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--brand-light);
+}
+
+input[type="checkbox"]:checked:before {
+  background-color: white;
+  left: 36px;
 }
