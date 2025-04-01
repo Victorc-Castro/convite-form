@@ -7,11 +7,11 @@ label + .droparea {
   grid-template-columns: 11rem 23rem;
   gap: 1rem;
   margin-top: 1.75rem;  
-  align-items: center;
+  position: relative;
 }
 
 label + .switch-toggle {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 
@@ -65,7 +65,7 @@ label + .switch-toggle {
   input[type="checkbox"]::before {
     content: "";
     position: absolute;
-   width: 24px;
+    width: 24px;
     height: 24px;
     background-color: var(--input-stroke);
     border-radius: 50%;
