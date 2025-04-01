@@ -7,8 +7,13 @@ label + .droparea {
   grid-template-columns: 11rem 23rem;
   gap: 1rem;
   margin-top: 1.75rem;  
-  position: relative;
+  align-items: center;
 }
+
+label + .switch-toggle {
+  margin-top: 1rem;
+}
+
 
 .droparea {
   display: flex;
@@ -42,35 +47,45 @@ label + .droparea {
   }
 }
 
+.switch-toggle {
+  position: relative;
+  display: flex;
+  gap: .5rem;
+  align-items: center;
 
- input[type="checkbox"] {
-  appearance: none;
-  width: 64px;
-  height: 32px;
-  border-radius: 999px;
-  cursor: pointer;
-  transition: .3s;
-  position: absolute;
-}
+  input[type="checkbox"] {
+    appearance: none;
+    width: 64px;
+    height: 32px;
+   border-radius: 999px;
+    cursor: pointer;
+    transition: .3s;
+  }
 
-input[type="checkbox"]::before {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  background-color: var(--input-stroke);
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 6%;
-  transition: .3s;
-}
+  input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+   width: 24px;
+    height: 24px;
+    background-color: var(--input-stroke);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    transition: .3s;
+  }
 
-input[type="checkbox"]:checked {
-  background-color: var(--brand-light);
-}
+  input[type="checkbox"]:checked {
+    background-color: var(--brand-light);
+  }
 
-input[type="checkbox"]:checked:before {
-  background-color: white;
-  left: 36px;
+  input[type="checkbox"]:checked:before {
+    background-color: white;
+    left: 36px;
+  }
+
+  & p {
+    font: var(--body-xs);
+    color: var(--text-body);
+  }
 }
