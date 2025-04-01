@@ -272,24 +272,31 @@
 
             <div class="files-wrapper">
 
-                <div class="file-wrapper">
-                  <label>Estilo</label>
-                  <div class="switch-toggle">
-                    <input type="checkbox" name="switch" id="switch">
-                    <p id="switch-text">Escuro</p>
-                  </div>
+              <div class="file-wrapper">
+                <label>Estilo</label>
+                <div class="switch-toggle">
+                  <input type="checkbox" name="switch" id="switch">
+                  <p id="switch-text">Escuro</p>
                 </div>
+              </div>
 
-                <div class="file-wrapper">
-                  <label for="file-input">Foto de capa</label>
-                  <div class="droparea">
-                    <div class="file-img"></div>
-                    <input type="file" id="file-input" name="file-input" accept=".png,.jpg,.jpeg">
-                    <!-- <p id="file-name">Nenhum arquivo selecionado</p> -->
-                    <p id="errorMsg" style="color: red"></p>
-                    <div>
+              <div class="file-wrapper">
+                <label for="file-input">Foto de capa</label>
+                <div class="droparea">
+                  <div class="file-img"></div>
+                  <input type="file" id="file-input" name="file-input" accept=".png,.jpg,.jpeg" required>
+                  <p id="file-name">Nenhum arquivo selecionado</p>
+                <div>
                 </div>
+              </div>
+
+              <div class="error-msg">
+                <div id="img-error"></div>
+                <p id="errorMsg"></p>
+              </div>
+              </div>
             </div>
+
           </fieldset>
 
         </form>

@@ -1,8 +1,4 @@
 // Estrutura JS do input file
-document.getElementById("file-input").addEventListener("change", function(event) {
-  let fileName = event.target.files.length > 0 ? event.target.files[0].name : "Nenhum arquivo selecionado"; document.getElementById("file-name").innerHTML = "image.png";
-});
-
 document.getElementById("file-input").addEventListener("change", function() {
   let file = this.files[0];
   let erroMsg = document.getElementById("errorMsg");
@@ -11,28 +7,16 @@ document.getElementById("file-input").addEventListener("change", function() {
     let allowedTypes = ["image/png", "image/jpeg"];
     if (!allowedTypes.includes(file.type)) { 
       errorMsg.textContent = "Apenas arquivos PNG e JPG são permitidos";
+      document.getElementById("img-error").innerHTML = `<div style="width: 1.2rem; height: 1.2rem;"></div>`;
+      document.getElementById("file-name").innerHTML = "Nenhum arquivo selecionado";
       this.value = "";
     } else {
       erroMsg.textContent = "";
+      document.getElementById("file-name").innerHTML = "img.png"; 
+      document.getElementById("img-error").innerHTML = "";
     }
   }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Estrutura JS do input checkbox

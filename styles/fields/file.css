@@ -20,6 +20,7 @@ label + .switch-toggle {
   position: relative;
   align-items: center;
   gap: .5rem;
+  margin-bottom: .3rem;
 
   & input {
     position: absolute;
@@ -47,6 +48,24 @@ label + .switch-toggle {
   }
 }
 
+.error-msg {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: .3rem;
+
+ & p#errorMsg {
+    font: var(--body-xs);
+    color: var(--danger);
+  }
+
+ & #img-error {
+    background-image: url(../../assets/icons/error-msg.svg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 .switch-toggle {
   position: relative;
   display: flex;
@@ -55,9 +74,9 @@ label + .switch-toggle {
 
   input[type="checkbox"] {
     appearance: none;
-    width: 64px;
-    height: 32px;
-   border-radius: 999px;
+    width: 4rem;
+    height: 2rem;
+   border-radius: 1rem;
     cursor: pointer;
     transition: .3s;
   }
@@ -65,13 +84,13 @@ label + .switch-toggle {
   input[type="checkbox"]::before {
     content: "";
     position: absolute;
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
     background-color: var(--input-stroke);
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
-    left: 5px;
+    left: 0.3125rem;
     transition: .3s;
   }
 
@@ -81,7 +100,7 @@ label + .switch-toggle {
 
   input[type="checkbox"]:checked:before {
     background-color: white;
-    left: 36px;
+    left: 2.25rem;
   }
 
   & p {
