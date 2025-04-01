@@ -284,9 +284,10 @@
                   <label for="file-input">Foto de capa</label>
                   <div class="droparea">
                     <div class="file-img"></div>
-                    <input type="file" id="file-input" name="file-input">
-                    <p id="file-name">Nenhum arquivo selecionado</p>
-                  <div>
+                    <input type="file" id="file-input" name="file-input" accept=".png,.jpg,.jpeg">
+                    <!-- <p id="file-name">Nenhum arquivo selecionado</p> -->
+                    <p id="errorMsg" style="color: red"></p>
+                    <div>
                 </div>
             </div>
           </fieldset>
