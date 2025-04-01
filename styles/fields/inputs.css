@@ -9,12 +9,51 @@ input, textarea, select {
   color: var(--text-heading);
 }
 
+input[type="text"], input[type="date"], textarea {
+  &:focus, :active {
+    border: 1px solid var(--brand-light);
+    outline: none;
+  }
+}
+
+.event-info > div > label {
+  margin-bottom: .75rem;
+}
+
+.event-info > div > div > label {
+  margin-bottom: .75rem;
+}
+
+
+input, textarea {
+  &:invalid {
+    border: 1px solid var(--danger);
+  }
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    margin-top: .25rem;
+
+    font: var(--body-xs);
+    color: var(--danger);
+  }
+
+  &:not(:focus):valid + .error {
+    display: none;
+  }
+}
+
 label {
   font: var(--body-sm);
   color: var(--text-body);
 
   display: block;
-  margin-bottom: .25rem;
+}
+
+label#ignore-label {
+  margin-bottom: .11rem;
 }
 
 ::placeholder {

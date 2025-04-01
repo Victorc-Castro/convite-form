@@ -95,11 +95,11 @@ label + .switch-toggle {
   }
 
   input[type="checkbox"]:checked {
-    background-color: var(--brand-light);
+    background-color: var(--brand-light) !important;
   }
 
   input[type="checkbox"]:checked:before {
-    background-color: white;
+    background-color: white !important;
     left: 2.25rem;
   }
 

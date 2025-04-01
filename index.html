@@ -46,7 +46,13 @@
                   name="event-name" 
                   id="event-name" 
                   placeholder="Nome do evento"
+                  class="bc-input"
+                  required
                 >
+                <div class="error">
+                  <img src="./assets/icons/error-msg.svg" alt="Ícone de alerta">
+                  <span>Campo obrigátorio</span>
+                </div>
               </div>
 
               <div class="flex">
@@ -76,13 +82,13 @@
                     <div class="radio-inner">
                       <div class="radio-image"></div>
                       <input type="radio" name="locon-party" value="present" id="present">
-                      <label for="present">Presencial</label>
+                      <label for="present" id="ignore-label">Presencial</label>
                     </div>
 
                     <div class="radio-inner-2">
                       <div class="radio-image"></div>
                       <input type="radio" name="locon-party" value="online" id="online">
-                      <label for="online">Online</label>
+                      <label for="online" id="ignore-label">Online</label>
                     </div>
                   </div>
                 </div>
@@ -94,7 +100,12 @@
                     name="local-info" 
                     id="local-info"
                     placeholder="Link ou endereço"
+                    required
                   >
+                  <div class="error">
+                    <img src="./assets/icons/error-msg.svg" alt="Ícone de alerta">
+                    <span>Campo obrigátorio</span>
+                  </div>
                 </div>
               </div>
 
@@ -105,16 +116,21 @@
                   id="description"
                   cols="30"
                   rows="4"
-                  placeholder="Escreva sobre os detalhes do evento"></textarea>
+                  placeholder="Escreva sobre os detalhes do evento"
+                  required></textarea>
+                  <div class="error">
+                    <img src="./assets/icons/error-msg.svg" alt="Ícone de alerta">
+                    <span>Campo obrigátorio</span>
+                  </div>
               </div>
           </fieldset>
 
-          <fieldset class="customization">
+          <div class="legend-config">
+            <img src="./assets/icons/pencil-icon.svg" alt="Ícone de pincel">
+            <legend>Personalização</legend>
+          </div>
 
-            <div class="legend-config">
-              <img src="./assets/icons/pencil-icon.svg" alt="Ícone de pincel">
-              <legend>Personalização</legend>
-            </div>
+          <fieldset class="customization">
 
             <div class="custom-wrapper">
               <label>Cor principal</label>
