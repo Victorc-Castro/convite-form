@@ -45,6 +45,20 @@ input, textarea {
   }
 }
 
+#error-2 {
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+  margin-left: auto;
+
+  border: 1px solid red;
+
+  & .error-txt-2 {
+    font: var(--body-xs);
+    color: var(--danger);
+  }
+}
+
 label {
   font: var(--body-sm);
   color: var(--text-body);

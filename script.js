@@ -18,6 +18,24 @@ document.getElementById("file-input").addEventListener("change", function() {
   }
 });
 
+// Estrutura JS do input local
+let input = document.getElementById("local-info");
+let error2 = document.getElementById("error-2");
+
+input.addEventListener("input", () => {
+  if (input.value.trim() === "") {
+    error2.style.opacity = "1";
+  } else {
+    error2.style.opacity = "0";
+  }
+});
+
+input.addEventListener("blur", () => {
+  if (input.value.trim() === "") {
+    error2.style.opacity = "1";
+  }
+});
+
 
 // Estrutura JS do input checkbox
 var checkbox = document.getElementById("switch");
