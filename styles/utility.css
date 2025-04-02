@@ -16,17 +16,13 @@
 
 .input-wrapper {
   display: grid;
+  margin-right: 1rem;
 }
 
 .flex {
   display: flex;
-  gap: 1rem;
 }
 
 .flex-1 {
   flex: 1;
-}
-
-.left {
-  /* margin-right: .90rem; */
 }

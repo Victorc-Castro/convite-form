@@ -49,7 +49,8 @@ input, textarea {
   display: flex;
   align-items: center;
   gap: .3rem;
-
+  margin-top: .25rem;
+  
   & .error-txt-2 {
     font: var(--body-xs);
     color: var(--danger);

@@ -8,8 +8,6 @@ label + .droparea {
   gap: 1rem;
   margin-top: 1.75rem;  
   position: relative;
-
-  border: 1px solid red;
 }
 
 label + .switch-toggle {
