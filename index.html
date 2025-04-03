@@ -126,7 +126,7 @@
                     <span>Campo obrigátorio</span>
                   </div>
               </div>
-              
+
           </fieldset>
 
           <div class="legend-config">
@@ -318,6 +318,95 @@
             </div>
 
           </fieldset>
+
+          <div class="legend-config legend-gap">
+            <img src="./assets/icons/date-icon.svg" alt="Ícone de dados">
+            <legend>Dados para contato</legend>
+          </div>
+
+          <fieldset class="date-info">
+            <div class="name">
+              <label for="name-id">Nome</label>
+              <input 
+                type="text" 
+                name="name-id" 
+                id="name-id" 
+                placeholder="Nome completo"
+                required
+              >
+                <div class="error">
+                  <img src="./assets/icons/error-msg.svg" alt="Ícone de alerta">
+                  <span>Campo obrigátorio</span>
+                </div>
+            </div>
+
+            <div class="flex">
+              <div class="input-wrapper flex-1">
+                <label for="contat-email">E-mail</label>
+                <input 
+                  type="mail" 
+                  name="contat-email" 
+                  id="contat-email" 
+                  placeholder="exemplo@email.com"
+                  required
+                >
+                <div class="error">
+                  <img src="./assets/icons/error-msg.svg" alt="Ícone de alerta">
+                  <span>Campo obrigátorio</span>
+                </div>
+
+              </div>
+
+              <div class="input-wrapper flex-1">
+                <label for="phone-info">Telefone</label>
+                <input 
+                  type="text" 
+                  name="phone-info" 
+                  id="phone-info" 
+                  placeholder="(99) 99999-9999"
+                  required
+                >
+                <div class="error">
+                  <img src="./assets/icons/error-msg.svg" alt="Ícone de alerta">
+                  <span>Campo obrigátorio</span>
+                </div>
+              </div>
+            </div>
+            
+          </fieldset>
+
+          <hr>
+
+          <div class="terms-gap">
+
+          <div class="terms-wrapper inputwrapper checkbox-wrapper">
+            <div class="checkbox-img"></div>
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">
+              Li e concordo com os <a href="">Termos e Condições</a> e com a <a href="">Política de Privacidade</a> 
+            </label>
+          </div>
+
+          <div class="terms-wrapper inputwrapper checkbox-wrapper">
+            <div class="checkbox-img"></div>
+            <input type="checkbox" name="terms-2" id="terms-2">
+            <label for="terms-2">
+              Li e concordo com osAceito receber atualizações e promoções por e-mail 
+            </label>
+          </div>
+
+          <div class="terms-wrapper inputwrapper checkbox-wrapper">
+            <div class="checkbox-img"></div>
+            <input type="checkbox" name="terms-3" id="terms-3">
+            <label for="terms-3">
+              Aceito receber atualizações e promoções por SMS
+            </label>
+          </div> 
+
+        </div>
+
+          
+
 
         </form>
       </div>

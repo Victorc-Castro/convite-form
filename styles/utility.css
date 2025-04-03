@@ -9,6 +9,10 @@
   color: var(--text-heading);
 }
 
+.legend-gap {
+  margin-top: 3rem;
+}
+
 .local-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -25,4 +29,9 @@
 
 .flex-1 {
   flex: 1;
+}
+
+.terms-gap {
+  display: grid;
+  gap: .75rem;
 }

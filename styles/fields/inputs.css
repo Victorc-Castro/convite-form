@@ -9,7 +9,7 @@ input, textarea, select {
   color: var(--text-heading);
 }
 
-input[type="text"], input[type="date"], textarea {
+input[type="text"], input[type="date"], input[type="mail"], textarea {
   &:focus, :active {
     border: 1px solid var(--brand-light);
     outline: none;
@@ -21,6 +21,14 @@ input[type="text"], input[type="date"], textarea {
 }
 
 .event-info > div > div > label {
+  margin-bottom: .75rem;
+}
+
+.name > label {
+  margin-bottom: .75rem;
+}
+
+.flex-1 > label {
   margin-bottom: .75rem;
 }
 
@@ -50,7 +58,7 @@ input, textarea {
   align-items: center;
   gap: .3rem;
   margin-top: .25rem;
-  
+
   & .error-txt-2 {
     font: var(--body-xs);
     color: var(--danger);
@@ -60,7 +68,6 @@ input, textarea {
 label {
   font: var(--body-sm);
   color: var(--text-body);
-
   display: block;
 }
 
@@ -90,4 +97,13 @@ fieldset {
 
 .textarea {
   margin-bottom: 3rem;
+}
+
+hr {
+  background-color: var(--input-placeholder);
+  border: none;
+  height: 1px;
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
 }
