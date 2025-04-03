@@ -58,3 +58,15 @@ body {
   --text-body: #C8CDD0;
   --text-heading: #F9F9F9;
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--input-stroke);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--input-placeholder);
+}
