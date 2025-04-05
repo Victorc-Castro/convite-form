@@ -1,0 +1,25 @@
+.action-wrapper {
+  display: flex;
+  align-items: center;
+  gap: .30rem;
+  padding: .75rem 1.5rem;
+  cursor: pointer;
+  background-color: var(--brand-dark);
+  width: 177px;
+  height: 48px;
+  border-radius: .5rem;
+  margin-left: auto;
+  margin-top: 48px;
+
+  & .btn {
+    all: unset;
+    font-weight: 500;
+    color: var(--text-heading);
+    font: var(--body-md);
+  }
+
+  &:hover {
+    transition: filter 0.3s ease-in-out;
+    filter: brightness(1.13);
+  }
+}
