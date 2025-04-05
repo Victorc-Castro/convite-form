@@ -65,6 +65,30 @@ input, textarea {
   }
 }
 
+#error-3 {
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+  margin-top: .25rem;
+
+  & .error-txt-2 {
+    font: var(--body-xs);
+    color: var(--danger);
+  }
+}
+
+#error-4 {
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+  margin-top: .25rem;
+
+  & .error-txt-2 {
+    font: var(--body-xs);
+    color: var(--danger);
+  }
+}
+
 label {
   font: var(--body-sm);
   color: var(--text-body);

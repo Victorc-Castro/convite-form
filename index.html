@@ -340,7 +340,7 @@
                 </div>
             </div>
 
-            <div class="flex">
+            <div class="local-wrapper">
               <div class="input-wrapper flex-1">
                 <label for="contat-email">E-mail</label>
                 <input 
@@ -350,12 +350,9 @@
                   placeholder="exemplo@email.com"
                   required
                 >
-                <div class="error">
-                  <img src="./assets/icons/error-msg.svg" alt="Ícone de alerta">
-                  <span>Campo obrigátorio</span>
-                </div>
-
               </div>
+
+              
 
               <div class="input-wrapper flex-1">
                 <label for="phone-info">Telefone</label>
@@ -366,10 +363,16 @@
                   placeholder="(99) 99999-9999"
                   required
                 >
-                <div class="error">
-                  <img src="./assets/icons/error-msg.svg" alt="Ícone de alerta">
-                  <span>Campo obrigátorio</span>
-                </div>
+              </div>
+
+              <div id="error-3">
+                <img src="./assets/icons/error-msg.svg" alt="">
+                <span class="error-txt-2">Campo Obrigatório</span>
+              </div>
+
+              <div id="error-4">
+                <img src="./assets/icons/error-msg.svg" alt="">
+                <span class="error-txt-2">Campo Obrigatório</span>
               </div>
             </div>
             
@@ -381,7 +384,7 @@
 
           <div class="terms-wrapper inputwrapper checkbox-wrapper">
             <div class="checkbox-img"></div>
-            <input type="checkbox" name="terms" id="terms">
+            <input type="checkbox" name="terms" id="terms" required>
             <label for="terms">
               Li e concordo com os <a href="">Termos e Condições</a> e com a <a href="">Política de Privacidade</a> 
             </label>
@@ -391,7 +394,7 @@
             <div class="checkbox-img"></div>
             <input type="checkbox" name="terms-2" id="terms-2">
             <label for="terms-2">
-              Li e concordo com osAceito receber atualizações e promoções por e-mail 
+              Aceito receber atualizações e promoções por e-mail 
             </label>
           </div>
 
@@ -407,7 +410,7 @@
 
           <div class="action-wrapper">
             <img src="./assets/icons/button-icon.svg" alt="">
-            <button class="btn">Gerar convite</button>
+            <button class="btn" type="submit">Gerar convite</button>
           </div>
 
         </form>

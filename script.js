@@ -36,6 +36,40 @@ input.addEventListener("blur", () => {
   }
 });
 
+let input2 = document.getElementById("contat-email");
+let error3 = document.getElementById("error-3");
+
+input2.addEventListener("input", () => {
+  if (input2.value.trim() === "") {
+    error3.style.opacity = "1";
+  } else {
+    error3.style.opacity = "0";
+  }
+});
+
+input2.addEventListener("blur", () => {
+  if (input2.value.trim() === "") {
+    error3.style.opacity = "1";
+  }
+});
+
+let input3 = document.getElementById("phone-info");
+let error4 = document.getElementById("error-4");
+
+input3.addEventListener("input", () => {
+  if (input3.value.trim() === "") {
+    error4.style.opacity = "1";
+  } else {
+    error4.style.opacity = "0";
+  }
+});
+
+input3.addEventListener("blur", () => {
+  if (input3.value.trim() === "") {
+    error4.style.opacity = "1";
+  }
+});
+
 
 // Estrutura JS do input checkbox
 var checkbox = document.getElementById("switch");
