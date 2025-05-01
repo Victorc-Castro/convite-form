@@ -12,3 +12,6 @@ Esse projeto foi desenvolvido usando as seguintes tecnologias:
 - CSS
 - GIT E Github
 - Javascript
+
+## 🏷️ Layout
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/community/file/1389649528880849780/formulario-de-convite). É necessário ter uma conta no [Figma](https://www.figma.com).
